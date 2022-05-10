@@ -1,0 +1,26 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.137.1:3306/demo?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    username: xuyonghong
+    password: Zby12345!
+
+  redis:
+    host: 47.96.24.237
+    port: 6379
+    password: zby123
+    database: 0
+    timeout: 1800000
+
+
+mybatis:
+  type-aliases-package: cn.xuyonghong.demo.domain
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+
+car:
+  name: tesla
+  price: 999
